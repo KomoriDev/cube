@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: block;
+    width: 100%;
+}
+
+span {
+    display: flex;
+    text-align: center;
+    justify-content: left;
+    align-items: flex-start;
+}
+
+h1 {
+    margin: 50px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-board 
+{
+    display: grid;
+    text-align: center;
+    justify-content: center;
+    grid-template-rows: 160px 160px 160px 160px;
+    grid-template-columns:320px 320px 320px 320px;
+}
+
+
+.container{
+    margin: 15px;
+    /* 弹性布局 */
+    display: flex;
+
+    width: 300px;
+    max-width: 850px;
+    height: 150px;
+    background-color: #F5F5F7;
+    border-radius: 25px;
+    position: relative;
+}
+.card{
+    /* 弹性布局 垂直居中 */
+    display: flex;
+    align-items: center;
+    /* width: 120%; */
+    height: 10;
+    padding-left: 30px;
+    /* 绝对定位 */
+    /* position: absolute; */
+    /* 溢出隐藏 */
+    overflow: hidden;
+}
+.card .img{
+
+    width: 100px;
+    height: 100px;
+    border-radius: 20px;
+    overflow: hidden;
+    /* 防止被挤压 */
+    flex-shrink: 0;
+    /* box-shadow: 0 10px 50px rgba(0,0,0,0.2); */
+}
+.card .img img{
+    width: 100%;
+    height: 100%;
+    /* 过渡效果 */
+    transition: 0.6s;
+}
+
+.card .title{
+    font-size: 30px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.card .text{
+    font-size: 16px;
+    color: #555;
+    text-align: justify;
+    margin-bottom: 25px;
+
+
+}
+.card button{
+    padding: 8px  10px;
+    background-color: #ffffff;
+    color: #212121;
+    outline: none;
+    border: unset;
+    cursor: pointer;
+    text-decoration: none;
+    border-radius: 50px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    /* box-shadow: 0 10px 50px rgba(0,0,0,0.2); */
+    /* float: right; */
+}
+
+.footer__copy{
+    text-align: center;
+    font-size: .90rem;
+    color: hsl(152, 4%, 55%);
+    margin: 1rem 0 2rem;
+}
