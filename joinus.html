@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>加入我们</title>
+    <link rel="icon" href="./asset/img/favicon.ico">
+
+    <style>
+        @import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+        
+        html, body {
+            height: 100%;
+        }
+
+        body {
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #222;
+            font-family: 'Anonymous Pro', monospace;
+            color: #eee;
+        }
+
+        .line {
+            width: 674px;
+            border-right: 2px solid #eee;
+            font-size: 28px;
+            text-align: center;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+
+        .animation {
+            animation: grow 4s steps(60) 2s normal both,
+            blink 1000ms steps(44) infinite normal;
+        }
+
+        @keyframes grow {
+            from {
+                width: 0;
+            }
+            to {
+                width: 480px;
+            }
+        }
+
+        @keyframes blank {
+            from {
+                border-right-color: #eee;
+            }
+            to {
+                border-right-color: transparent;
+            }
+        }
+    </style>
+
+</head>
+<body>
+    <p class="line animation">
+        想要加入我们？联系QQ：2740324073
+    </p>
+
+</body>
+</html>

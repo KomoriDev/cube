@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./asset/img/favicon.ico">
+    <title>Cube with U</title>
+    <style>
+        html{
+            height:100%;
+            min-width:600px;
+            min-height:576px;       
+        }
+        body{
+            background-color:#eef4f9;
+            font-family:HarmonyOS_Sans_SC;
+
+            overflow:auto;
+            overflow-y:scroll;
+            text-align:center;
+            height:100%;
+        }
+        #title{
+            /* 主体块标题 */
+                position:relative;
+                top:5%;
+                font-size:xx-large;
+        }
+        #centerNav{
+            /* 中心主体块 */
+            visibility:hidden;
+            transition:all 0.5s cubic-bezier(0,1,0,1);
+
+            display:inline-block;
+            position:relative;
+            top:100%;
+            width:800px;
+            height:500px;
+            min-width:1100px;
+        }
+        .navSec{
+            /* 选项卡 */
+            border-radius:10px;
+            visibility:hidden;
+
+            display:inline-block;
+            margin-left:1%;
+            width:30%;
+            height:100%;
+        }
+
+        .inNavSce1{
+            /* 属于一号选项卡的所有按钮 */
+            float:left;
+            margin-top:4%;
+            margin-left:5%;
+            width:90%;
+            height:30%;
+        }
+        .inNavSce1:nth-child(1){
+            /* 一号选项卡的第一个按钮 */
+            background-image:url(./asset/img/bot.png);
+        }
+        .inNavSce1:nth-child(2){
+            /* 一号选项卡的第二个按钮 */
+            background-image:url(./asset/img/gif.png);
+            background-position:0 0px;
+        }
+        .inNavSce1:nth-child(3){
+            /* 一号选项卡的第三个按钮（盒子） */
+            visibility:hidden;
+        }
+        #qq{
+            /* 一号选项卡的QQ按钮 */
+            background-image:url(./asset/img/addqq.png);
+            background-position:center;
+            
+            float:left;
+            width:48%;
+            height:100%;
+        }
+        #qq:hover{
+            background-image:url(./asset/img/qrcode.png) ;
+            background-size: 85% 85%;
+            align-items: center;
+        }
+        #font{
+            /* 一号选项卡的字体按钮 */
+            background-image:url(./asset/img/cfop.png);
+
+            float:left;
+            margin-left:4%;
+            width:48%;
+            height:100%;
+        }
+
+        .inNavSce2{
+            /* 属于二号选项卡的所有按钮 */
+            float:left;
+            margin-top:4%;
+            margin-left:5%;
+        }
+        .inNavSce2:first-child{
+            /* 二号选项卡的第一个按钮 */
+            background-image:url(./asset/img/feedback.png);
+            width:90%;
+            height:62%;
+        }
+        .inNavSce2:nth-child(2){
+            /* 二号选项卡的第二个按钮 */
+            background-position:0 -10px;
+            background-image:url(./asset/img/joinus.png);
+            background-size:100% auto;
+            background-repeat:no-repeat;
+
+            width:90%;
+            height:30.6%;
+        }
+
+        .inNavSce3{
+            /* 属于三号选项卡的所有按钮 */
+            float:left;
+            margin-top:4%;
+            margin-left:5%;
+        }
+        .inNavSce3:first-child{
+            /* 三号选项卡的第一个按钮 */
+            background-image:url(./asset/img/store.png);
+            width:90%;
+            height:46%;
+        }
+        .inNavSce3:nth-child(2){
+            /* 三号选项卡的第二个按钮 */
+            background-image:url(./asset/img/resource.png);
+            width:90%;
+            height:46.55%;
+        }
+
+        .button{
+            /* 所有的按钮 */
+            transition:all 0.2s ease 0s;
+            visibility:visible;
+            background-size:100% auto;
+            background-repeat:no-repeat;
+            background-color:white;
+            box-shadow:10px 10px 50px #bebebe93;
+            border-radius:10px;
+        }
+        .button:hover{
+            transform:translateY(-10px);
+            cursor:pointer;
+        }
+        .footer__copy{
+            text-align: center;
+            font-size: .90rem;
+            color: hsl(152, 4%, 55%);
+            margin: 2rem 0 2rem;
+        }
+    </style>
+</head>
+<body>
+    <div id="title"><!--标题-->
+        <h2 style="margin:0;color:#414141;">Cube with U</h2>
+        <!-- <div style="margin:0;color:#414141;">design by Wild Soul</div> -->
+        <br>
+    </div>
+    <div id="centerNav"><!--中心主体块-->
+            <div class="navSec"><!--一号选项卡-->
+                <div class="inNavSce1 button" onClick="window.open('https://mute23-code.github.io/docs/','_self')"></div>
+                <div class="inNavSce1 button" onClick="window.open('tutorial.html','_self')"></div>
+                <div class="inNavSce1">
+                    <div id="qq" class="button" onClick="window.open('group_official.html','_self')"></div>
+                    <div id="font" class="button" onClick="window.open('cfop.html','_self')"></div>
+                </div>
+            </div>
+            <div class="navSec"><!--二号选项卡-->
+                <div class="inNavSce2 button" onClick="window.open('https://support.qq.com/product/423251','_self')"></div>
+                <div class="inNavSce2 button" onClick="window.open('joinus.html','_self')"></div>
+            </div>
+            <div class="navSec"><!--三号选项卡-->
+                <div class="inNavSce3 button" onClick="window.open('https://shop110948839.taobao.com/index.htm?spm=2013.1.w5002-14889808140.2.22e17065BV2Lf1','_self')"></div>
+                <div class="inNavSce3 button" onClick="window.open('resource.html','_self')"></div>
+            </div>
+        </div>
+        <fonter>
+            <p class="footer__copy">&#169; Wild Soul. All rights reserved</p>
+        </footer>
+    <script>
+        function intoAnimal(){
+            let oCenterNav = document.getElementById("centerNav");
+            oCenterNav.style.top="5%";
+        }
+        setTimeout("intoAnimal()","100");
+    </script>
+</body>
+</html>
